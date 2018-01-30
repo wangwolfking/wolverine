@@ -2,8 +2,12 @@
     <wb-module deploy-name="wolverine">
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
         <wb-resource deploy-path="/" source-path="/WebRoot" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource/properties"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource/process"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resource/config"/>
         <property name="context-root" value="wolverine"/>
         <property name="java-output-path" value="/wolverine/target/classes"/>
     </wb-module>
