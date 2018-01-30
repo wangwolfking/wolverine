@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx" 
+	xsi:schemaLocation=" 
+			http://www.springframework.org/schema/context  
+			http://www.springframework.org/schema/context/spring-context-4.2.xsd 
+			http://www.springframework.org/schema/beans  
+ 			http://www.springframework.org/schema/beans/spring-beans-4.2.xsd 
+ 			http://www.springframework.org/schema/mvc  
+ 			http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd 
+ 			http://www.springframework.org/schema/aop  
+ 			http://www.springframework.org/schema/aop/spring-aop-4.2.xsd 
+ 			http://www.springframework.org/schema/tx  
+ 			http://www.springframework.org/schema/tx/spring-tx-4.2.xsd"> 
+ 	<!-- 加载mysqldb.properties文件中的内容，mysqldb.properties文件中的key命名要有一定的特殊规则 --> 
+ 	<context:property-placeholder location="classpath:mysqldb.properties" /> 
+ 	                                                   
+ 	<!-- 配置数据源，dbcp连接池 --> 
+ 	<bean name="dataSource" class="org.apache.commons.dbcp.BasicDataSource" 
+ 		destroy-method="close"> 
+ 		<property name="driverClassName" value="${jdbc.mysql.driver}" /> 
+ 		<property name="url" value="${jdbc.mysql.url}" /> 
+ 		<property name="username" value="${jdbc.mysql.username}" /> 
+ 		<property name="password" value="${jdbc.mysql.password}" /> 
+ 		<property name="maxActive" value="30" /> 
+ 		<property name="maxIdle" value="15" /> 
+ 		<!-- <property name="driverClassName"> <value>com.mysql.jdbc.Driver</value>  
+ 			</property> <property name="url"> <value>jdbc:mysql://127.0.0.1:3306/mybatis</value>  
+ 			</property> <property name="username"> <value>root</value> </property> <property  
+ 			name="password"> <value>manager1</value> </property> --> 
+ 	</bean> 
+ 	<!-- sqlseSsionFactory --> 
+ 	<!-- spring和MyBatis整合 --> 
+ 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"> 
+ 		<property name="dataSource" ref="dataSource" /> 
+ 		<property name="configLocation" value="classpath:mybatis/sqlMapConfig.xml" /> 
+ 		<!-- 自动扫描mapping.xml文件 --> 
+ 		<property name="mapperLocations" value="classpath:com/yocaly/ssm/mapper/*.xml"></property>  
+ 	</bean> 
+ 	<!-- mapper扫描器 --> 
+ 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"> 
+ 		<!-- basePackage 属性是让你为映射器接口文件设置基本的包路径。 你可以使用分号或逗号 作为分隔符设置多于一个的包路径。每个映射器将会在指定的包路径中递归地被搜索到 --> 
+ 		<property name="basePackage" value="com.yocaly.ssm.dao" /> 
+ 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" /> 
+ 	</bean> 
+ </beans> 

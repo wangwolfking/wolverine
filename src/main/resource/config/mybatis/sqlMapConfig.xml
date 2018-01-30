@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration> 
+	<!-- 全局的setting配置，根据需要再加 --> 
+	<settings> 
+		<setting name="logImpl" value="LOG4J" /> 
+	</settings> 
+	<!-- 别名 --> 
+ 	<typeAliases> 
+ 		<package name="com.yocaly.ssm.model" /> 
+ 	</typeAliases>  
+
+ 	<!-- <typeAliases> <typeAlias type="cn.fisher.webchat.user.model.TbManagerUser"  
+ 		alias="tmu"/> <typeAlias type="cn.fisher.webchat.menu.model.CustomButton"  
+ 		alias="cb"/> <typeAlias type="cn.fisher.webchat.localtype.model.LocalTypeModel"  
+ 		alias="ltm"/> </typeAliases> --> 
+ 	<!-- 配置mapper 由于我们要用spring和mybatis的整合包进行mapper扫描，整理不需要配置mapper --> 
+ 	<!-- 必须遵循mapper.xml与mapper.java同名并且在一个目录下 --> 
+ 	<!-- <mappers></mappers> --> 
+ </configuration> 
