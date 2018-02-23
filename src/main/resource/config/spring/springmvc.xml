@@ -24,6 +24,7 @@
       <mvc:resources location="/login/img/" mapping="/login/img/**"/> 
       <mvc:resources location="/login/js/" mapping="/login/js/**"/> 
       <mvc:resources location="/login/css/" mapping="/login/css/**"/> 
+      <mvc:resources location="/test/css/" mapping="/test/css/**"/> 
       <bean 
  		class="org.springframework.web.servlet.view.InternalResourceViewResolver"> 
  		<property name="prefix" value="/" /> 

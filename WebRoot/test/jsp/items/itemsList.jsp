@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -7,11 +6,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>商品查询列表</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/test/css/itemsUtil.css"></link>
 </head>
 <body>
-<form action="queryItems.action" method="post" title="qqqqq" enctype="application/x-www-form-urlencoded">
-
-<input type="submit" value="123"></form>
+	<form action="queryItems.action" method="post" title="qqqqq" enctype="application/x-www-form-urlencoded">
+		<input type="submit" value="123">
+	</form>
 	<table with="100%" border="1">
 		<tr>
 			<td>名称</td>
