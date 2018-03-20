@@ -1,4 +1,4 @@
-package test.zhujie;
+package test.annotation;
 
 public class FruitRun {
     public static void main(String[] args) {

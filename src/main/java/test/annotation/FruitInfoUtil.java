@@ -1,4 +1,4 @@
-package test.zhujie;
+package test.annotation;
 import java.lang.reflect.Field;
 
 /**

@@ -1,6 +1,6 @@
-package test.zhujie;
+package test.annotation;
 
-import test.zhujie.FruitColor.Color;
+import test.annotation.FruitColor.Color;
 
 /**
  * 注解使用
