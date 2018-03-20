@@ -1,6 +1,6 @@
-package test.annotation;
+package demo.annotation;
 
-import test.annotation.FruitColor.Color;
+import demo.annotation.FruitColor.Color;
 
 /**
  * 注解使用

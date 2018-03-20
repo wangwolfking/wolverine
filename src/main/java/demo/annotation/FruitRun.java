@@ -1,4 +1,4 @@
-package test.annotation;
+package demo.annotation;
 
 public class FruitRun {
     public static void main(String[] args) {

@@ -1,30 +1,26 @@
-package test.annotation;
+package demo.annotation;
+
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.FIELD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
-
 /**
- * 水果供应者注解
+ * 水果颜色注解
  */
 @Target(FIELD)
 @Retention(RUNTIME)
 @Documented
-public @interface FruitProvider {
+public @interface FruitColor {
     /**
-     * 供应商编号
+     * 颜色枚举
      */
-    public int id() default -1;
+    public enum Color{ BLUE,RED,GREEN};
     
     /**
-     * 供应商名称
+     * 颜色属性
      */
-    public String name() default "";
-    
-    /**
-     * 供应商地址
-     */
-    public String address() default "";
+    Color fruitColor() default Color.GREEN;
+
 }
