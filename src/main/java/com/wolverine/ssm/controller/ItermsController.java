@@ -1,4 +1,4 @@
-package com.yocaly.ssm.controller;
+package com.wolverine.ssm.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -14,9 +14,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.yocaly.ssm.model.ItemsCustomer;
-import com.yocaly.ssm.model.ItemsQueryVo;
-import com.yocaly.ssm.service.ItemsService;
+import com.wolverine.ssm.model.ItemsCustomer;
+import com.wolverine.ssm.model.ItemsQueryVo;
+import com.wolverine.ssm.service.ItemsService;
 
 @Controller
 public class ItermsController {

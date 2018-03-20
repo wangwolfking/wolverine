@@ -1,4 +1,4 @@
-package com.yocaly.ssm.model;
+package com.wolverine.ssm.model;
 import java.io.File;
 
 public class LeaveWorkflowModel {

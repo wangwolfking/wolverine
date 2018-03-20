@@ -1,13 +1,13 @@
-package com.yocaly.ssm.service.impl;
+package com.wolverine.ssm.service.impl;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.yocaly.ssm.dao.ItemsMapperCustom;
-import com.yocaly.ssm.model.ItemsCustomer;
-import com.yocaly.ssm.model.ItemsQueryVo;
-import com.yocaly.ssm.service.ItemsService;
+import com.wolverine.ssm.dao.ItemsMapperCustom;
+import com.wolverine.ssm.model.ItemsCustomer;
+import com.wolverine.ssm.model.ItemsQueryVo;
+import com.wolverine.ssm.service.ItemsService;
 
 public class ItemsServiceImpl implements ItemsService {
 	@Autowired

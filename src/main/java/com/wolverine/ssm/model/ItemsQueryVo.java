@@ -1,4 +1,4 @@
-package com.yocaly.ssm.model;
+package com.wolverine.ssm.model;
 
 public class ItemsQueryVo {
 	/* 商品的信息类 */
