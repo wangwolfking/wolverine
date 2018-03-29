@@ -9,6 +9,8 @@
 
 package com.wolverine.dom4j.pojo.long_ranger;
 
+import java.util.List;
+
 /**
  * 描述：TODO 用一句话描述这个类的作用（必选）. <br>
  * 背景：TODO 描述创建该类的背景原因（可选）. <br>
@@ -24,5 +26,33 @@ package com.wolverine.dom4j.pojo.long_ranger;
  * @author  yocaly team
  */
 public class EcgList {
-    // TODO Auto-generated method stub
+    private String LeadType;
+    private String Comment;
+    private String CommentEx;
+    private List<Comment> comments;
+    public String getLeadType() {
+        return LeadType;
+    }
+    public void setLeadType(String leadType) {
+        LeadType = leadType;
+    }
+    public String getComment() {
+        return Comment;
+    }
+    public void setComment(String comment) {
+        Comment = comment;
+    }
+    public String getCommentEx() {
+        return CommentEx;
+    }
+    public void setCommentEx(String commentEx) {
+        CommentEx = commentEx;
+    }
+    public List<Comment> getComments() {
+        return comments;
+    }
+    public void setComments(List<Comment> comments) {
+        this.comments = comments;
+    }
+    
 }

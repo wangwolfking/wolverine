@@ -24,5 +24,33 @@ package com.wolverine.dom4j.pojo.long_ranger;
  * @author  yocaly team
  */
 public class AFBeatAreaItem {
-    // TODO Auto-generated method stub
+    private String BeginPos;
+    private String EndPos;
+    private String AFEType;
+    private String AFKind;
+    public String getBeginPos() {
+        return BeginPos;
+    }
+    public void setBeginPos(String beginPos) {
+        BeginPos = beginPos;
+    }
+    public String getEndPos() {
+        return EndPos;
+    }
+    public void setEndPos(String endPos) {
+        EndPos = endPos;
+    }
+    public String getAFEType() {
+        return AFEType;
+    }
+    public void setAFEType(String aFEType) {
+        AFEType = aFEType;
+    }
+    public String getAFKind() {
+        return AFKind;
+    }
+    public void setAFKind(String aFKind) {
+        AFKind = aFKind;
+    }
+    
 }

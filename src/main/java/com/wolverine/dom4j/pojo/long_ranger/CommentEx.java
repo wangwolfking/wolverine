@@ -14,15 +14,53 @@ package com.wolverine.dom4j.pojo.long_ranger;
  * 背景：TODO 描述创建该类的背景原因（可选）. <br>
  * 日期：2018-03-28 10:51 <br>
  * 变更：
+ * 
  * <pre>
  * Version      Date           ModifiedBy       Content
  * --------     ----------     ------------     -----------------------
  * 1.0          2018-03-28     wangzhigang.           创建
  * </pre>
- * @since   JDK 1.8
+ * 
+ * @since JDK 1.8
  * @version 1.0
- * @author  yocaly team
+ * @author yocaly team
  */
 public class CommentEx {
-    // TODO Auto-generated method stub
+    private String BaseLine;
+    private String JDiff;
+    private String StDiff;
+    private String LeadTpe;
+
+    public String getBaseLine() {
+        return BaseLine;
+    }
+
+    public void setBaseLine(String baseLine) {
+        BaseLine = baseLine;
+    }
+
+    public String getJDiff() {
+        return JDiff;
+    }
+
+    public void setJDiff(String jDiff) {
+        JDiff = jDiff;
+    }
+
+    public String getStDiff() {
+        return StDiff;
+    }
+
+    public void setStDiff(String stDiff) {
+        StDiff = stDiff;
+    }
+
+    public String getLeadTpe() {
+        return LeadTpe;
+    }
+
+    public void setLeadTpe(String leadTpe) {
+        LeadTpe = leadTpe;
+    }
+
 }
