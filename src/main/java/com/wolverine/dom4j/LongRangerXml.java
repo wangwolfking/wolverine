@@ -1,12 +1,3 @@
-/**
- * Project Name: wolverine
- * Package Name: com.wolverine.dom4j
- * File    Name: Long_Dom4j.java
- * Create  Date: 2018-03-28 15:20
- * Copyright (c) 2018, www.yocaly.com All Rights Reserved.
- * 注意：本内容仅限于山东优加利信息科技有限公司内部传阅，禁止外泄以及用于其他的商业目
- */
-
 package com.wolverine.dom4j;
 
 import java.io.File;
@@ -48,6 +39,11 @@ import com.wolverine.dom4j.pojo.long_ranger.YocalyECGReport;
 public class LongRangerXml {
     private String suEncoding="utf-8";//源编码格式
     private String dsEncoding="utf-8";//目标编码格式
+    private String allName="com.wolverine.dom4j.pojo.long_ranger." ;
+    
+    public void setAllName(String allName) {
+        this.allName = allName;
+    }
 
     public void setSuEncoding(String suEncoding) {
         this.suEncoding = suEncoding;
@@ -270,7 +266,8 @@ public class LongRangerXml {
     public Object getclass(String className)
             throws InstantiationException, IllegalAccessException, ClassNotFoundException {
         //此处是类的全路径名称
-        String cname = "com.wolverine.dom4j.pojo.long_ranger." + className;
+        System.out.println(this.allName);
+        String cname =this.allName + className;
         Class obj = Class.forName(cname);
         Object oo = obj.newInstance();
         return oo;
