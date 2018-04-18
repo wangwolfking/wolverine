@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root comment="ss" simversion="3.0">
+	<container comment="container_1" type="node">
+		<variable address="1" type="readOnly" />
+		<container comment="container1_1" type="node">
+			<variable address="2" type="readOnly" />
+			<container comment="container1_1_1" type="node">
+				<variable address="3" type="readOnly" />
+			</container>
+		</container>
+	</container>
+	<container comment="container_2" type="node">
+		<variable address="4" type="readOnly" />
+		<container comment="2_1" type="node">
+			<variable address="5" type="readOnly" />
+		</container>
+		<container comment="2_2" type="node">
+			<variable address="6" type="readOnly" />
+			<variable address="7" type="readOnly" />
+			<container comment="2_2_1" type="node">
+				<variable address="8" type="readOnly" />
+				<variable address="9" type="readOnly" />
+			</container>
+		</container>
+	</container>
+</root> 
